@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Bizagi Widget - ComboBoxWS  : Bizagi Widget repository utility">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Bizagi Widget - ComboBoxWS </title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/didapape/Widgets">View on GitHub</a>
+
+          <h1 id="project_title">Bizagi Widget - ComboBoxWS </h1>
+          <h2 id="project_tagline">Bizagi Widget repository utility</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/didapape/Widgets/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/didapape/Widgets/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="bizagi-widget---combo-box-with-data-from-ws" class="anchor" href="#bizagi-widget---combo-box-with-data-from-ws" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bizagi Widget - Combo Box with Data from WS</h1>
+
+<p>Bizagi Widget repository utility</p>
+
+<h1>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p>This Bizagi **Widget allows you to populate a combo box with data obtained using a  bizagi rule,which could consume an external web service.</p>
+
+<h1>
+<a id="instalation" class="anchor" href="#instalation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalation</h1>
+
+<p>Download the DropdownWG.bwg file and add it in the bizagi studio of your project like a user control.(Review <a href="http://help.bizagi.com/bpmsuite/es/widgets_manualinst.htm">http://help.bizagi.com/bpmsuite/es/widgets_manualinst.htm</a>)</p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>Add  the new control in your form on bizagi studio  and define the parameters below:</p>
+
+<ul>
+<li>
+<strong>IdRule</strong>: Rule to execute for Widget, which return string XML with data to show, this string should have the format below (this rule maybe consume a web service to query data):
+<code>&lt;Items&gt;
+&lt;Item&gt;
+    &lt;Code&gt;1&lt;/Code&gt;
+    &lt;Name&gt;Item 1&lt;/Name&gt;
+&lt;/Item&gt;
+&lt;Item&gt;
+    &lt;Code&gt;2&lt;/Code&gt;
+    &lt;Name&gt;Item 2&lt;/Name&gt;
+&lt;/Item&gt;
+&lt;Item&gt;
+    &lt;Code&gt;3&lt;/Code&gt;
+    &lt;Name&gt;Item 3&lt;/Name&gt;
+&lt;/Item&gt;
+&lt;/Items&gt;
+</code>
+</li>
+<li>
+<strong>Code</strong>: Field in XML to use like "id" on combo box<br>
+</li>
+<li>
+<strong>Name</strong>: Field in XML to use like "name" on combo box</li>
+</ul>
+
+<h1>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h1>
+
+<p>If you have any suggestions, changes or want to include new features, that's easy... create a fork of this project, perform your changes and send a pull request, we will incorporate your changes in this repo to keep growing the library.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Bizagi Widget - ComboBoxWS  maintained by <a href="https://github.com/didapape">didapape</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
