@@ -1,0 +1,26 @@
+<Registros>
+	<Registro>
+		<Code>1</Code>
+		<Name>REGISTRO 1</Name>
+	</Registro>
+	<Registro>
+		<Code>2</Code>
+		<Name>REGISTRO 2</Name>
+	</Registro>
+	<Registro>
+		<Code>3</Code>
+		<Name>REGISTRO 3</Name>
+	</Registro>
+	<Registro>
+		<Code>4</Code>
+		<Name>REGISTRO 4</Name>
+	</Registro>
+	<Registro>
+		<Code>5</Code>
+		<Name>REGISTRO 5</Name>
+	</Registro>
+	<Registro>
+		<Code>6</Code>
+		<Name>REGISTRO 6</Name>
+	</Registro>
+</Registros>
