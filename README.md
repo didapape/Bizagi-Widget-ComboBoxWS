@@ -4,7 +4,7 @@ Bizagi Widget repository utility
  This **Bizagi Widget** allows you to populate a combo box with data obtained using a  bizagi rule,which could consume an external web service.
 
 #Instalation
-Download the **DropBoxPopulateWS.bwg** file and add it in the bizagi studio of your project like a user control.(Review http://help.bizagi.com/bpmsuite/es/widgets_manualinst.htm)
+Download the **DropDownPopulateWS.bwg** file and add it in the bizagi studio of your project like a user control.(Review http://help.bizagi.com/bpmsuite/es/widgets_manualinst.htm)
 
 #Usage
 Add  the new control in your form on bizagi studio  and define the parameters below:
