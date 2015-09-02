@@ -1,0 +1,472 @@
+{
+  "name": "DropBoxPopulateWS",
+  "guid": "45171bac-5fa0-44e8-aae6-288eccef6ea5",
+  "display": {
+    "default": "DropBoxPopulateWS",
+    "languages": [
+      {
+        "en": "DropBoxPopulateWS"
+      }
+    ]
+  },
+  "type": "userfield",
+  "rendertype": "userfield",
+  "design": {
+    "properties": {
+      "xpath": {
+        "bas-type": "xpath-to-simple",
+        "editor-parameters": {
+          "types": [
+            "string"
+          ]
+        },
+        "caption": {
+          "default": "Data Binding",
+          "languages": [
+            {
+              "es": "Mapeo de datos"
+            }
+          ]
+        },
+        "required": true,
+        "subproperties": {
+          "xpath": {
+            "bas-type": "xpath"
+          }
+        },
+        "main": true
+      },
+      "helptext": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Help text",
+          "languages": [
+            {
+              "es": "Texto de ayuda"
+            }
+          ]
+        }
+      },
+      "visible": {
+        "bas-type": "rule-expression",
+        "caption": {
+          "default": "Visible"
+        },
+        "editor-parameters": {
+          "type": "boolean"
+        },
+        "default": {
+          "fixedvalue": "true"
+        },
+        "required": true,
+        "subproperties": {
+          "fixedvalue": {
+            "bas-type": "boolean"
+          },
+          "rule": {
+            "bas-type": "rule"
+          }
+        }
+      },
+      "editable": {
+        "bas-type": "rule-expression",
+        "caption": {
+          "default": "Editable"
+        },
+        "editor-parameters": {
+          "type": "boolean"
+        },
+        "default": {
+          "fixedvalue": "true"
+        },
+        "required": true,
+        "subproperties": {
+          "fixedvalue": {
+            "bas-type": "boolean"
+          },
+          "rule": {
+            "bas-type": "rule"
+          }
+        }
+      },
+      "required": {
+        "bas-type": "rule-expression",
+        "caption": {
+          "default": "Required",
+          "languages": [
+            {
+              "es": "Requerido"
+            }
+          ]
+        },
+        "editor-parameters": {
+          "type": "boolean"
+        },
+        "default": {
+          "fixedvalue": "false"
+        },
+        "required": true,
+        "subproperties": {
+          "fixedvalue": {
+            "bas-type": "boolean"
+          },
+          "rule": {
+            "bas-type": "rule"
+          }
+        }
+      },
+	"displaytype": { 
+		"bas-type": "display-type", 
+		"caption": { "default": "Display type", "languages": [ { "es": "Tipo de visualización"} ] },
+		"default": "both" 
+	},
+      "labelalign": {
+        "bas-type": "horizontal-align",
+        "caption": {
+          "default": "Label Horizontal Align",
+          "languages": [
+            {
+              "es": "Etiqueta Alin. Horizontal"
+            }
+          ]
+        },
+        "default": "default"
+      },
+      "valuealign": {
+        "bas-type": "horizontal-align",
+        "caption": {
+          "default": "Value Horizontal Align",
+          "languages": [
+            {
+              "es": "Valor Alin. Horizontal"
+            }
+          ]
+        },
+        "default": "default"
+      },
+      "layout": {
+        "bas-type": "render-layout",
+        "editor-parameters": {
+          "elements": [
+            {
+              "name": "label",
+              "caption": "label",
+              "default": 50
+            },
+            {
+              "name": "value",
+              "caption": "value",
+              "default": 50
+            }
+          ]
+        },
+        "subproperties": {
+          "labelwidth": {
+            "bas-type": "int",
+            "caption": {
+              "default": "Label width",
+              "languages": [
+                {
+                  "es": "Ancho Etiqueta"
+                }
+              ]
+            },
+            "metavalue": "<design:layout:label>",
+            "default": 50
+          },
+          "valuewidth": {
+            "bas-type": "int",
+            "caption": {
+              "default": "Control width",
+              "languages": [
+                {
+                  "es": "Ancho Control"
+                }
+              ]
+            },
+            "metavalue": "<design:layout:value>",
+            "default": 50
+          }
+        }
+      },
+      "IdRule": {
+        "bas-type": "rule",
+        "caption": {
+          "default": "IdRule",
+          "languages": [
+            {
+              "en": "IdRule"
+            }
+          ]
+        },
+        "required": true
+      },
+      "FieldCode": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Field Code",
+          "languages": [
+            {
+              "en": "Field Code"
+            }
+          ]
+        },
+        "required": true
+      },
+      "FieldName": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Field Name",
+          "languages": [
+            {
+              "en": "Field Name"
+            }
+          ]
+        },
+        "required": true
+      },
+      "displayName": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Display Text",
+          "languages": [
+            {
+              "en": "Display Text"
+            }
+          ]
+        },
+        "required": false
+      },
+      "TitleToShow": {
+        "bas-type": "localizable-string",
+        "caption": {
+          "default": "Title To Show",
+          "languages": [
+            {
+              "en": "Title To Show"
+            }
+          ]
+        }
+      }
+    },
+    "visual": {
+      "controls-navigator": {
+        "group": {
+          "default": "Data Webservice",
+          "languages": [
+            {
+              "en": "Data Webservice"
+            }
+          ]
+        }
+      },
+      "ribbon": {},
+      "context-menu": {},
+      "property-box": {
+        "tabs": [
+          {
+            "id": "basic",
+            "caption": {
+              "default": "Basic",
+              "languages": []
+            },
+            "elements": [
+           
+              {
+                "type": "property",
+                "value": "xpath"
+              },
+            {"type": "property", "value":"displayName"}, 
+            {"type": "property", "value":"displaytype"}, 
+              {
+                "type": "property",
+                "value": "visible"
+              },
+              {
+                "type": "property",
+                "value": "editable"
+              },
+              {
+                "type": "property",
+                "value": "required"
+              },
+              {
+                "type": "property",
+                "value": "IdRule"
+              },
+              {
+                "type": "property",
+                "value": "TitleToShow"
+              }
+            ]
+          },
+          {
+            "id": "new1440597024252",
+            "caption": {
+              "default": "For Data from XML",
+              "languajes": []
+            },
+            "elements": [
+              {
+                "type": "property",
+                "value": "FieldCode"
+              },
+              {
+                "type": "property",
+                "value": "FieldName"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "properties": [
+      {
+        "name": "userfieldGuid",
+        "type": "string",
+        "metavalue": "45171bac-5fa0-44e8-aae6-288eccef6ea5",
+        "designvalue": "45171bac-5fa0-44e8-aae6-288eccef6ea5"
+      },
+      {
+        "name": "designMode",
+        "type": "boolean",
+        "metavalue": "false",
+        "designvalue": "true"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "metavalue": "userfield",
+        "designvalue": "userfield"
+      },
+      {
+        "name": "xpath",
+        "type": "xpath",
+        "metavalue": "<design:xpath:xpath>"
+      },
+      {
+        "name": "value",
+        "type": "xpath-value",
+        "metavalue": "{ \"xpath\": \"<design:xpath:xpath>\" }"
+      },
+      {
+        "name": "control",
+        "type": "string",
+        "metavalue": "DropBoxPopulateWS",
+        "designvalue": "DropBoxPopulateWS"
+      },
+      {
+        "name": "extendedData",
+        "type": "string",
+        "metavalue": "",
+        "designvalue": ""
+      },
+      {
+        "name": "visible",
+        "type": "boolean",
+        "metavalue": "<design:visible:fixedvalue>",
+        "depends": "<design:visible:fixedvalue>",
+        "designvalue": "<design:visible:fixedvalue>"
+      },
+      {
+        "name": "visible",
+        "type": "rule",
+        "metavalue": "<design:visible:rule>",
+        "depends": "<design:visible:rule>"
+      },
+      {
+        "name": "editable",
+        "type": "boolean",
+        "metavalue": "<design:editable:fixedvalue>",
+        "depends": "<design:editable:fixedvalue>",
+        "designvalue": "<design:editable:fixedvalue>"
+      },
+      {
+        "name": "editable",
+        "type": "rule",
+        "metavalue": "<design:editable:rule>",
+        "depends": "<design:editable:rule>"
+      },
+      {
+        "name": "required",
+        "type": "boolean",
+        "metavalue": "<design:required:fixedvalue>",
+        "depends": "<design:required:fixedvalue>",
+        "designvalue": "<design:required:fixedvalue>"
+      },
+      {
+        "name": "required",
+        "type": "rule",
+        "metavalue": "<design:required:rule>",
+        "depends": "<design:required:rule>"
+      },
+    { "name": "displayType", "type": "string", "metavalue": "<design:displaytype>", "depends": "<design:displaytype>", "designvalue": "<design:displaytype>" },
+      {
+        "name": "labelAlign",
+        "type": "string",
+        "metavalue": "<design:labelalign>",
+        "depends": "<design:labelalign>"
+      },
+      {
+        "name": "valueAlign",
+        "type": "string",
+        "metavalue": "<design:valuealign>",
+        "depends": "<design:valuealign>"
+      },
+      {
+        "name": "labelWidth",
+        "type": "int",
+        "metavalue": "<design:layout:labelwidth>",
+        "depends": "<design:layout:labelwidth>",
+        "designvalue": "<design:layout:labelwidth>"
+      },
+      {
+        "name": "valueWidth",
+        "type": "int",
+        "metavalue": "<design:layout:valuewidth>",
+        "depends": "<design:layout:valuewidth>",
+        "designvalue": "<design:layout:valuewidth>"
+      },
+      {
+        "name": "IdRule",
+        "type": "rule",
+        "metavalue": "<design:IdRule>",
+        "depends": "<design:IdRule>",
+        "designvalue": "<design:IdRule>",
+        "async": true
+      },
+      {
+        "name": "FieldCode",
+        "type": "lstring",
+        "metavalue": "<design:FieldCode>",
+        "depends": "<design:FieldCode>",
+        "designvalue": "<design:FieldCode>"
+      },
+      {
+        "name": "FieldName",
+        "type": "lstring",
+        "metavalue": "<design:FieldName>",
+        "depends": "<design:FieldName>",
+        "designvalue": "<design:FieldName>"
+      },
+      {
+        "name": "displayName",
+        "type": "lstring",
+        "metavalue": "<design:displayName>",
+        "depends": "<design:displayName>",
+        "designvalue": "<design:displayName>"
+      },
+      {
+        "name": "TitleToShow",
+        "type": "lstring",
+        "metavalue": "<design:TitleToShow>",
+        "depends": "<design:TitleToShow>",
+        "designvalue": "<design:TitleToShow>"
+      }
+    ],
+    "decision-table": [],
+    "decision-tables-overrides": []
+  }
+}
