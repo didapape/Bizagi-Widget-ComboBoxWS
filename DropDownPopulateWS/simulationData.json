@@ -1,0 +1,29 @@
+[
+  {
+    "id": "Othao33Bf",
+    "name": "Scenario",
+    "properties": {
+      "id": "45171bac-5fa0-44e8-aae6-288eccef6ea5",
+      "userfieldGuid": "45171bac-5fa0-44e8-aae6-288eccef6ea5",
+      "designMode": false,
+      "type": "userfield",
+      "xpath": "widget.property739",
+      "value": "00oadEJdc",
+      "control": "DropBoxPopulateWS",
+      "extendedData": "",
+      "visible": true,
+      "editable": true,
+      "required": true,
+      "displayType": "both",
+      "labelAlign": "YkSu2OhJh",
+      "valueAlign": "CSZNxS1Qr",
+      "labelWidth": 288,
+      "valueWidth": 509,
+      "IdRule": "<Items> <Item> <Code>1</Code> <Name>Item X</Name> </Item> <Item> <Code>2</Code> <Name>Item 2</Name> </Item> <Item> <Code>3</Code> <Name>Item 3</Name> </Item> <Item> <Code>4</Code> <Name>Item 4</Name> </Item> <Item> <Code>5</Code> <Name>Item 5</Name> </Item> <Item> <Code>6</Code> <Name>Item 6</Name> </Item> </Items>",
+      "FieldCode": "Code",
+      "FieldName": "Name",
+      "displayName": "Test",
+      "TitleToShow": "Select item"
+    }
+  }
+]
